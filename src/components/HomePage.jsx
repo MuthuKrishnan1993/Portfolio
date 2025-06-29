@@ -3,6 +3,7 @@ import "./HomePage.css";
 import { Button, Container } from "@radix-ui/themes";
 import SplitText from "../AniComponents/DecryptedText";
 import { useLayoutEffect, useRef } from "react";
+import mypic from "../assets/mypic.png";
 import gsap from "gsap";
 
 function HomePage() {
@@ -51,7 +52,11 @@ function HomePage() {
             <div id="avatar" className="relative w-full sm:w-1/2">
               <div className="h-full w-full overflow-hidden rounded-b-full">
                 <img
-                  src="https://devrajchatribin.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.3016a54d.webp&w=828&q=75"
+                  src={mypic}
+                  alt="MuthuKrishnan"
+                  id="avatar-img"
+                  loading="lazy"
+                  draggable="false"
                   className="aspect-[3/4] h-full w-full object-cover transition duration-300 hover:scale-[1.015]"
                 />
               </div>
