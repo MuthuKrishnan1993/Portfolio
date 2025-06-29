@@ -1,0 +1,72 @@
+.hamburger-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+  background-image: url(https://res.cloudinary.com/dnpyq0ocz/image/upload/v1588441892/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-tap-highlight-color: transparent;
+  top: 12px;
+  left: 12px;
+  justify-content: center;
+}
+.hamburger-button.open {
+  background-image: url(https://res.cloudinary.com/dnpyq0ocz/image/upload/v1588441892/icon-hamburger-close.svg);
+}
+.panel {
+  max-width: 500px;
+  /*background-color: #455073;*/
+  background-color: #000;
+  background-size: 117px 188px;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.34, 1.01);
+  position: fixed;
+  z-index: 5;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  padding: 75px 20px;
+  display: flex;
+  justify-content: center;
+}
+.panel.open {
+  visibility: visible;
+  width: 100%;
+  right: 0;
+  opacity: 1;
+}
+ul {
+  margin: auto 0 auto auto;
+}
+ul li {
+  list-style: none;
+  font-size: 2em;
+  text-align: left;
+}
+ul li + li {
+  margin-top: 1em;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+ul li a:hover {
+  color: #7a6ffb;
+}
+.mob-menu {
+  margin: 0;
+  text-align: left;
+}
+.mob-menu li {
+  text-align: left;
+}
+.mobile-panel {
+}
