@@ -21,45 +21,53 @@ const steps = [
     title: "https://www.stutzen.co/",
     img: Stutzen,
     texts: [
-      "The Stutzen website is a clean and professional showcase of their IT services",
+      "Stutzen is a business-focused website built for a technology solutions provider, aimed at showcasing their services, products, and digital capabilities. The site was developed on WordPress, offering a content-driven and visually engaging experience, optimized for both performance and user interaction. My primary responsibility was to create a custom, responsive frontend that reflects the brand’s innovation and professionalism.",
     ],
   },
   {
     id: "our-work-2",
     step: 2,
     img: Seasons5,
-    title: "Identify your clients",
-    texts: ["It could be anyone who needs their business to become famous."],
+    title: "https://seasons5.com.au/",
+    texts: [
+      "Seasons5 is a luxury resort and spa located in Victoria, Australia. The website was designed to reflect the premium experience offered by the venue—covering accommodation, weddings, conferences, dining, and wellness services. Developed using WordPress, the site delivers a rich, responsive, and visually immersive experience to potential guests, while being fully manageable from the backend",
+    ],
   },
   {
     id: "our-work-3",
     step: 3,
-    title: "Select the billboards that best match the clients’ needs",
+    title: "www.reebok.id",
     img: Reebok,
     texts: [
-      "it may be a key location close to their business, or a location that will expose them to new audiences. The possibilities are endless.",
+      "The Reebok Indonesia website is a premium e-commerce platform developed on Magento 2, designed to deliver a seamless and high-performance shopping experience for a leading global sportswear brand. As the Frontend Developer, my role was to translate the brand's visual identity into a responsive, optimized, and engaging user interfac",
     ],
   },
   {
     id: "our-work-4",
     step: 4,
-    title: "Confirm the sale",
+    title: "www.newbalance.co.id",
     img: Newbalance,
-    texts: ["Sign the contract and send the payment."],
+    texts: [
+      "New Balance Indonesia's digital commerce presence (newbalance.co.id) by architecting and implementing a Magento 2-based solution tailored for performance-driven athletic footwear retail. Led the modernization of the platform to serve Indonesia's growing sneaker market, focusing on mobile-first experiences, localized payment ecosystems, and seamless omnichannel integration while maintaining brand premium positioning..",
+    ],
   },
   {
     id: "our-work-5",
     step: 5,
-    title: "Send the artwork to the platform",
+    title: "www.converse.id",
     img: Converse,
-    texts: [],
+    texts: [
+      "Converse Indonesia's digital commerce experience (converse.id) on Magento 2, delivering a brand-centric platform for sneakers and apparel tailored to Indonesian consumers. Led the migration from a legacy system to a high-performance Magento architecture, optimizing for localized user journeys, omnichannel integration, and mobile-first engagement while preserving Converse's iconic branding.",
+    ],
   },
   {
     id: "our-work-6",
     step: 6,
-    title: "Receive your commissions and enjoy life!",
+    title: "www.footlocker.id",
     img: Footlocker,
-    texts: [],
+    texts: [
+      "Foot Locker Indonesia's digital presence (footlocker.id) by developing a robust Magento-based e-commerce platform tailored for the Indonesian market. Led end-to-end implementation of a high-performance solution for athletic footwear/apparel sales, focusing on localization, scalability, and conversion optimization while integrating with regional business systems.",
+    ],
   },
 ];
 
@@ -190,7 +198,9 @@ const TimelineScroll = () => {
                         <div className="md:w-2/4 project-card flex items-center">
                           {texts.map((text, idx) => (
                             <div className="blurred-box__text" key={idx}>
-                              <h2>{title}</h2>
+                              <h2 className="mb-4 text-tertiary-500">
+                                {title}
+                              </h2>
                               <p>{text}</p>
                             </div>
                           ))}
@@ -202,7 +212,7 @@ const TimelineScroll = () => {
                 <ul className="carousel__nav" ref={navRef}>
                   {steps.map(({ id }) => (
                     <li
-                      className="carousel__nav__item"
+                      className="carousel__nav__item bg-tertiary-500"
                       data-target={id}
                       key={id}
                     ></li>

@@ -44,7 +44,7 @@ function ContactUs() {
   }, [isSubmitSuccessful, reset]);
   return (
     <>
-      <Container id="contact" className="h-dvh mx-wid">
+      <Container id="contact" className="h-dvh mx-wid justify-center">
         <div className="flex flex-row gap-2.5 contact">
           <div className="w-2/4 contact-content">
             <h1 className="font-bold text-tertiary-500 text-un lg:text-1.5xl mt-4 pl-2 flex flex-row gap-2 align-middle align-center uppercase font-weight-900 font:oswald">

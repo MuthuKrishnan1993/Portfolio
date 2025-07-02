@@ -1,8 +1,18 @@
 .header {
   padding-top: 200px;
 }
+.svg-icon-arr {
+  position: absolute;
+  top: 80%;
+  right: 59px;
+}
 @media (max-width: 767px) {
   .header {
     padding-top: 75px;
+  }
+  .svg-icon-arr {
+    position: absolute;
+    top: 80%;
+    right: 45px;
   }
 }

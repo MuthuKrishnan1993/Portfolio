@@ -29,7 +29,7 @@ function AboutMe() {
           <ScrollReveal
             baseOpacity={0.2}
             enableBlur={false}
-            baseRotation={5}
+            baseRotation={20}
             blurStrength={10}
             className="text-secondary-500 font-light lg:text-2 mt-4 pl-2"
           >
