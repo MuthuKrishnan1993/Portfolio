@@ -53,7 +53,13 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.login-container {
+  min-height: 100vh;
+}
+.userdata {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .outer {
   /*height: 75dvh;*/
 }

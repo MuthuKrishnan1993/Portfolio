@@ -80,7 +80,7 @@ function Registration() {
     }
   }, [isSubmitSuccessful, reset]);
   return (
-    <Container>
+    <Container className="login-container">
       {loading ? "Loading..." : ""}
       <div className="flex flex-wrap gap-2.5 pt-40 justify-center">
         <div className="w-2/4">

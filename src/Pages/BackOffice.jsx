@@ -18,7 +18,7 @@ function Backoffice() {
   }, []);
   return (
     <>
-      <Container>
+      <Container className="login-container">
         <div className="flex flex-col gap-2.5 justify-center pt-40">
           <div className="w-fulljustify-center">
             <h1 className="justify-center font-bold text-tertiary-500 text-un lg:text-1.5xl mt-4 pl-2 flex flex-row gap-2 align-middle text-center align-center uppercase font-weight-900 font:oswald">
@@ -28,11 +28,11 @@ function Backoffice() {
               Manage your content here!
             </h2>
           </div>
-          <div className="w-full flex flex-wrap">
+          <div className="w-full flex flex-wrap justify-center pt-10">
             {contactData.length > 0 ? (
               contactData.map((data) => (
-                <Box className="flex flex-row mb-2 w-2/4" key={data.id}>
-                  <Card>
+                <Box className="flex flex-row mb-2 w-2/4 mr-1" key={data.id}>
+                  <Card className="w-full p-4 bg-tertiary-500">
                     <Flex gap={10} direction="column">
                       <Box>
                         <Text as="div" size="2" weight="bold">
